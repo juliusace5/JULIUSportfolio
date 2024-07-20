@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import Nav from './Components/Header/Header';
+import Hero from './Components/Hero/Hero';
+import About from './Components/Aboutme/Aboutme';
+import Projects from './Components/Myprojects/Myprojects';
+import Contact from './Components/Contactme/Contactme';
 import './App.css';
 
-function App() {
+const App = () => {
+  const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+      }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <Nav scrollToSection={scrollToSection} />
+          <Hero id="hero" />
+          <About id="about" />
+          <Projects id="projects" />
+          <Contact id="contact" />
+      </div>
   );
-}
+};
 
 export default App;
+

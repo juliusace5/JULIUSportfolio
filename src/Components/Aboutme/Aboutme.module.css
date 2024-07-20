@@ -1,0 +1,122 @@
+.container{
+    background-color: #2c272e;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.innercontainer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
+
+.textside h3{
+    color: white;
+    font-size: 50px;
+    font-family: lato;
+   
+}
+
+.textside h4{
+    color: white;
+    font-size: 30px;
+    font-family: lato;
+   
+}
+
+.textside p{
+    color: white;
+    font-size: 16px;
+    font-family: lato;
+    margin: 2rem 0;
+}
+
+.textside{
+    width: 50%;
+}
+.imageside{
+    width: 50%;
+}
+
+
+
+.imageside img{
+    width: 100%;
+}
+
+button{
+    background-color: #8dda6e;
+    border: 2px solid #8dda6e;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 2px;
+    font-family: lato;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.pictext{
+    width: 100%;
+    font-size: 20px;
+    font-family: lato;
+    color: #8dda6e;
+    border: 6px solid #8dda6e;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding: 5px 10px;
+}
+.whatsapp{
+    width: 100%;
+}
+.whatsappicon{
+    color: green;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.whatsappicon:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.link{
+    width: 100%;
+}
+.linkicon{
+    color: rgb(65, 21, 224);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.linkicon:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.call{
+    width: 100%;
+}
+.callicon{
+    color: rgb(240, 239, 243);
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+}
+.callicon:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.social{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

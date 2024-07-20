@@ -1,0 +1,288 @@
+.container{
+    background-color: #1d1a1f;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.innercontainer{
+    width: 85%;
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    /* gap: 10rem; */
+    
+}
+.header h3{
+    color: white;
+    font-size: 25px;
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.flex1{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.flex2{
+    display: flex;
+    gap: 1rem;
+}
+.flex2image1 img{
+    width: 85%;
+    border-radius: 20px;
+}
+
+.flex2image2 img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+.flex1image2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flex1image1 img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+.flex1image1{
+    position: relative;
+    
+}
+.flex1image1:hover .myText1{
+    height: 100%;
+}
+
+
+
+
+.myText1{
+    /* background-color: #1429A9; */
+    background-color: rgba(134, 121, 134, 0.8);  /* Semi-transparent color */
+    transition: background-color 1s ease;
+
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    height: 0;
+    padding: 0rem;
+    text-align: center;
+    border-radius: 100px;
+    
+    
+}
+
+.myText1 h3{
+    color: rgb(27, 8, 26);
+    font-size: 25px;
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.myText1 p{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText1 h5{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.flex1image2{
+    position: relative;
+    
+}
+.flex1image2:hover .myText2{
+    height: 100%;
+}
+
+.myText2{
+    /* background-color: #1429A9; */
+    background-color: rgba(134, 121, 134, 0.8);  /* Semi-transparent color */
+    transition: background-color 1s ease;
+
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    height: 0;
+    padding: 0rem;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+.myText2 h3{
+    color: rgb(27, 8, 26);
+    font-size: 25px;
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.myText2 p{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText2 h5{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.flex2image1{
+    position: relative;
+    
+}
+.flex2image1:hover .myText3{
+    height: 100%;
+}
+
+.myText3{
+    /* background-color: #1429A9; */
+    background-color: rgba(134, 121, 134, 0.8);  /* Semi-transparent color */
+    transition: background-color 1s ease;
+
+    width: 85%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    height: 0;
+    padding-bottom: -5rem;
+    text-align: center;
+    border-radius: 20px;
+    
+    
+}
+.myText3 h3{
+    color: rgb(27, 8, 26);
+    font-size: 25px;
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.myText3 p{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText3 h5{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.flex2image2{
+    position: relative;
+    cursor: pointer;
+    
+}
+.flex2image2:hover .myText4{
+    height: 100%;
+}
+
+.myText4{
+    /* background-color: #1429A9; */
+    background-color: rgba(134, 121, 134, 0.8);  /* Semi-transparent color */
+    transition: background-color 1s ease;
+
+    width: 100%;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    height: 0;
+    padding-bottom: -5rem;
+    text-align: center;
+    border-radius: 50px;
+    
+    
+    
+}
+.myText4 h3{
+    color: rgb(27, 8, 26);
+    font-size: 25px;
+    font-family: lato;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.myText4 p{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText4 h5{
+    color: rgb(27, 8, 26);
+    font-size: 20px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
