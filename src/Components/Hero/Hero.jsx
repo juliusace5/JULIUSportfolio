@@ -19,7 +19,8 @@ const Hero = ({ id }) => {
     </p>
     <div className={Style.anchor}>
     <a href="https://github.com/juliusace5" target="_blank" rel="noopener noreferrer">View GitHub</a>
-     <a href="#contact">Contact</a>
+     <a href="https://drive.google.com/uc?export=download&id=1XH2r2oiBcWO2PKnkLf82K8X4bwzpLGuh
+">Download CV</a>
      </div>
 </div>
 

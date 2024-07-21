@@ -85,7 +85,7 @@
 
 .myText1 h3{
     color: rgb(27, 8, 26);
-    font-size: 25px;
+    font-size: 40px;
     font-family: lato;
     text-align: center;
     font-weight: 400;
@@ -93,7 +93,7 @@
 }
 
 .myText1 p{
-    color: rgb(27, 8, 26);
+    color: rgb(5, 0, 5);
     font-size: 20px;
     font-family: lato;
     width: 80%;
@@ -103,8 +103,18 @@
 }
 
 .myText1 h5{
-    color: rgb(27, 8, 26);
-    font-size: 20px;
+    color: rgb(216, 10, 10);
+    font-size: 30px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText1 h5 a{
+    color: rgb(216, 10, 10);
+    font-size: 30px;
     font-family: lato;
     width: 80%;
     text-align: center;
@@ -142,7 +152,7 @@
 }
 .myText2 h3{
     color: rgb(27, 8, 26);
-    font-size: 25px;
+    font-size: 40px;
     font-family: lato;
     text-align: center;
     font-weight: 400;
@@ -150,7 +160,7 @@
 }
 
 .myText2 p{
-    color: rgb(27, 8, 26);
+    color: rgb(5, 0, 5);
     font-size: 20px;
     font-family: lato;
     width: 80%;
@@ -160,8 +170,19 @@
 }
 
 .myText2 h5{
-    color: rgb(27, 8, 26);
-    font-size: 20px;
+    color: rgb(216, 10, 10);
+    font-size: 30px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.myText2 h5 a{
+    color: rgb(216, 10, 10);
+    font-size: 30px;
     font-family: lato;
     width: 80%;
     text-align: center;
@@ -199,7 +220,7 @@
 }
 .myText3 h3{
     color: rgb(27, 8, 26);
-    font-size: 25px;
+    font-size: 40px;
     font-family: lato;
     text-align: center;
     font-weight: 400;
@@ -207,7 +228,7 @@
 }
 
 .myText3 p{
-    color: rgb(27, 8, 26);
+    color: rgb(5, 0, 5);
     font-size: 20px;
     font-family: lato;
     width: 80%;
@@ -217,8 +238,19 @@
 }
 
 .myText3 h5{
-    color: rgb(27, 8, 26);
-    font-size: 20px;
+    color: rgb(216, 10, 10);
+    font-size: 30px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+.myText3 h5 a{
+    color: rgb(216, 10, 10);
+    font-size: 30px;
     font-family: lato;
     width: 80%;
     text-align: center;
@@ -259,7 +291,7 @@
 }
 .myText4 h3{
     color: rgb(27, 8, 26);
-    font-size: 25px;
+    font-size: 40px;
     font-family: lato;
     text-align: center;
     font-weight: 400;
@@ -267,7 +299,7 @@
 }
 
 .myText4 p{
-    color: rgb(27, 8, 26);
+    color: rgb(5, 0, 5);
     font-size: 20px;
     font-family: lato;
     width: 80%;
@@ -277,8 +309,18 @@
 }
 
 .myText4 h5{
-    color: rgb(27, 8, 26);
-    font-size: 20px;
+    color: rgb(216, 10, 10);
+    font-size: 30px;
+    font-family: lato;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.myText4 h5 a{
+    color: rgb(216, 10, 10);
+    font-size: 30px;
     font-family: lato;
     width: 80%;
     text-align: center;
