@@ -1,5 +1,5 @@
 .container{
-    background-color: #1d1a1f;
+    background: linear-gradient(to bottom, #1d1c1d, #121113, #121113);
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -328,3 +328,159 @@
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1024px) { 
+    .myText1 p{
+        font-size: 14px;
+    }
+    .myText2 p{
+        font-size: 14px;
+    }
+    .myText3 p{
+        font-size: 14px;
+    }
+    .myText4 p{
+        font-size: 14px;
+    }
+    .myText1 h3{
+        font-size: 30px;
+        margin: 0rem 0;
+    }
+    .myText2 h3{
+        font-size: 30px;
+        margin: 0rem 0;
+    }
+    .myText3 h3{
+        font-size: 30px;
+        margin: 0rem 0;
+    }
+    .myText4 h3{
+        font-size: 30px;
+        margin: 0rem 0;
+    }
+
+    .myText1 h5 a{
+        font-size: 20px;
+    }
+    .myText2 h5 a{
+        font-size: 20px;
+    }
+    .myText3 h5 a{
+        font-size: 20px;
+    }
+    .myText4 h5 a{
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) { 
+    .myText1 p{
+        font-size: 11px;
+    }
+    .myText2 p{
+        font-size: 11px;
+    }
+    .myText3 p{
+        font-size: 11px;
+    }
+    .myText4 p{
+        font-size: 11px;
+    }
+
+    .myText1 h3{
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
+    .myText2 h3{
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
+    .myText3 h3{
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
+    .myText4 h3{
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
+
+
+}
+
+@media screen and (max-width: 430px) { 
+    .flex1{
+        display: block;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+    
+    .flex2{
+        display: block;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .flex2image1 img{
+        width: 100%;
+    }
+    .flex2image1{
+        margin-bottom: 1rem;
+    }
+    .flex1image1{
+        margin-bottom: 1rem;
+    }
+    .myText3{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 390px) { 
+    .myText1 p{
+        font-size: 11px;
+        margin-bottom: -0.5rem;
+    }
+    .myText2 p{
+        font-size: 11px;
+        margin-bottom: -0.5rem;
+    }
+    .myText3 p{
+        font-size: 11px;
+        margin-bottom: -0.5rem;
+    }
+    .myText4 p{
+        font-size: 11px;
+        margin-bottom: -0.5rem;
+    }
+
+    .myText1 h5 a{
+        font-size: 12px;
+    }
+    .myText2 h5 a{
+        font-size: 12px;
+    }
+    .myText3 h5 a{
+        font-size: 12px;
+    }
+    .myText4 h5 a{
+        font-size: 12px;
+    }
+
+    .myText1 h3{
+        font-size: 15px;
+        margin: 0.5rem 0;
+    }
+    .myText2 h3{
+        font-size: 15px;
+        margin: 0.5rem 0;
+    }
+    .myText3 h3{
+        font-size: 15px;
+        margin: 0.5rem 0;
+    }
+    .myText4 h3{
+        font-size: 15px;
+        margin: 0.5rem 0;
+    }
+}

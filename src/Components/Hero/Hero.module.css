@@ -1,16 +1,41 @@
-.container{
-    background-color: #1d1a1f;
+.container {
+    background: linear-gradient(to bottom, #121113, #121113, #1d1c1d);
     padding-top: 8rem;
     padding-bottom: 4rem;
 }
 
+.innercontainer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
 
+.textside h3 {
+    color: white;
+    font-size: 50px;
+    font-family: Lato;
+}
 
-/* styles.css */
+/* Glowing effect */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #8dda6e, 0 0 2px #8dda6e, 0 0 2px #8dda6e, 0 0 10px #8dda6e, 0 0 10px #8dda6e;
+    }
+    /* 50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+    } */
+}
+
+/* Applying the glowing effect */
 .textside h3 span {
     opacity: 0;
     display: inline-block;
-    animation: fadeIn 1.5s forwards;
+    animation: fadeIn 2s forwards, glow 2s infinite;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -29,73 +54,46 @@
 
 @keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
     100% {
         opacity: 1;
     }
 }
 
-
-
-
-
-
-
-.innercontainer{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 10rem;
-    
-}
-
-.textside h3{
-    color: white;
-    font-size: 50px;
-    font-family: lato;
-   
-}
-
-.textside p{
+.textside p {
     color: white;
     font-size: 25px;
-    font-family: lato;
+    font-family: Lato;
     margin: 2rem 0;
 }
 
-
-
-
-
-.imageside img{
+.imageside img {
     width: 100%;
 }
-.anchor{
+
+.anchor {
     width: 100%;
     display: flex;
 }
 
-.anchor a{
+.anchor a {
     background-color: #8dda6e;
     border: 2px solid #8dda6e;
     cursor: pointer;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 2px;
-    font-family: lato;
+    font-family: Lato;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
 }
 
-
-
-.pictext{
+.pictext {
     width: 100%;
     font-size: 20px;
-    font-family: lato;
+    font-family: Lato;
     color: #8dda6e;
     border: 6px solid #8dda6e;
     text-align: center;
@@ -103,4 +101,77 @@
     border-radius: 15px;
     margin-top: 1rem;
     padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 768px) { 
+    .innercontainer {
+        gap: 4rem;
+    }
+    .textside p {
+        font-size: 15px;
+        margin: 1rem 0;
+    }
+    .textside h3 {
+        font-size: 40px;
+    }
+    .imageside img {
+        width: 100%;
+    }
+    .pictext {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .anchor a {
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 2px;
+        font-size: 9px;
+    }
+
+
+}
+
+@media screen and (max-width: 430px) { 
+    .innercontainer {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pictext {
+        display: none;
+    }
+    .textside {
+        text-align: center;
+    }
+    .textside p {
+        font-size: 20px;
+        margin: 0.5rem 0;
+    }
+
+    .imageside img {
+        width: 100%;
+        text-align: center;
+    }
+    .anchor {
+        text-align: center;
+        justify-content: center;
+    }
+    .anchor a {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 390px) { 
+    .textside p {
+        font-size: 18px;
+    }
 }

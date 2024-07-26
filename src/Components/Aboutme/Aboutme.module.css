@@ -1,5 +1,5 @@
 .container{
-    background-color: #2c272e;
+    background-color: #1d1c1d;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -119,4 +119,48 @@ button{
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) { 
+   
+    .textside h3{
+        font-size: 40px;
+    }
+    
+    .textside h4{
+        font-size: 20px;
+    }
+    
+    .textside p{
+        font-size: 12px;
+        margin: 1rem 0;
+    }
+
+}
+
+@media screen and (max-width: 430px) { 
+    .innercontainer{
+        display: block;
+        gap: 0rem;
+        text-align: center;
+    }
+    .textside{
+        width: 100%;
+    }
+    .imageside{
+        width: 100%;
+    }
+    .container{
+        padding-top: 2rem;
+    }
+    .textside p{
+        font-size: 15px;
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width: 390px) { 
+    .textside p{
+        font-size: 13px;
+        margin: 1rem 0;
+    }
 }

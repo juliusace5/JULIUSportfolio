@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import Styles from './Contactme.module.css';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
 const Contactme = ({ id }) => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,6 @@ const Contactme = ({ id }) => {
     message: ''
   });
   const [errors, setErrors] = useState({});
-  const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,40 +30,15 @@ const Contactme = ({ id }) => {
     return newErrors;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       // Form is valid, submit the form
-      try {
-        await axios.post('https://api.brevo.com/v3/smtp/email/send', {
-          sender: {
-            name: formData.firstName + ' ' + formData.lastName,
-            email: formData.email,
-          },
-          to: [
-            {
-              email: 'Juliusanighoro6@gmail.com', // Replace with your email address
-              name: 'Julius Anighoro',
-            },
-          ],
-          subject: 'Contact Form Submission',
-          htmlContent: `<p>${formData.message}</p>`,
-        }, {
-          headers: {
-            'Content-Type': 'application/json',
-            'api-key': process.env.REACT_APP_SENDINBLUE_API_KEY, // Use environment variable
-          },
-        });
-
-        setSuccessMessage('Your message has been sent successfully!');
-        // Reset form
-        setFormData({ firstName: '', lastName: '', email: '', message: '' });
-        setErrors({});
-      } catch (error) {
-        console.error('Error sending email:', error);
-        setErrors({ submit: 'Failed to send your message. Please try again later.' });
-      }
+      console.log('Form submitted:', formData);
+      // Reset form
+      setFormData({ firstName: '', lastName: '', email: '', message: '' });
+      setErrors({});
     } else {
       setErrors(formErrors);
     }
@@ -121,13 +95,18 @@ const Contactme = ({ id }) => {
               ></textarea>
               {errors.message && <div className={Styles.error}>{errors.message}</div>}
             </div>
-            {errors.submit && <div className={Styles.error}>{errors.submit}</div>}
-            {successMessage && <div className={Styles.success}>{successMessage}</div>}
             <button type="submit">Send</button>
           </form>
         </div>
       </div>
+      <div className={Styles.scrollUp} onClick={() =>{
+        window.scrollTo({top:0, left:0, behavior:'smooth'});
+      }}>
+        <BsFillArrowUpCircleFill className={Styles.iconscroll}/>
+      </div>
     </div>
+
+    
   );
 };
 
