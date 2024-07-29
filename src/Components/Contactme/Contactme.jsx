@@ -1,47 +1,42 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Styles from './Contactme.module.css';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import emailjs from '@emailjs/browser';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+
+const Response = ({ message }) => {
+  return (
+    <p className={Styles.responseMessage}>{message}</p>
+  );
+};
 
 const Contactme = ({ id }) => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState({});
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const [response, showResponse] = useState(false);
+  const [responseMessage, setResponseMessage] = useState('');
+  const form = useRef();
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-    }
-  };
-
-  const validateForm = () => {
-    const newErrors = {};
-    if (!formData.firstName) newErrors.firstName = 'First Name is required';
-    if (!formData.lastName) newErrors.lastName = 'Last Name is required';
-    if (!formData.email) newErrors.email = 'Email is required';
-    if (!formData.message) newErrors.message = 'Message is required';
-    return newErrors;
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const formErrors = validateForm();
-    if (Object.keys(formErrors).length === 0) {
-      // Form is valid, submit the form
-      console.log('Form submitted:', formData);
-      // Reset form
-      setFormData({ firstName: '', lastName: '', email: '', message: '' });
-      setErrors({});
-    } else {
-      setErrors(formErrors);
-    }
+
+    emailjs.sendForm("service_e7gguxe", "template_44kwulb", form.current, "pGcP635PT1hysq7g4")
+      .then(
+        (result) => {
+          console.log(result.text);
+          setResponseMessage("Thank you! Your message has been sent successfully.");
+          showResponse(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setResponseMessage("Message not sent. Please try again.");
+          showResponse(true);
+        }
+      );
+
+    form.current.reset();
+
+    setTimeout(() => {
+      showResponse(false);
+    }, 5000); // Adjusted to 5 seconds for better visibility
   };
 
   return (
@@ -51,27 +46,23 @@ const Contactme = ({ id }) => {
           <h3>Contact Me</h3>
         </div>
         <div className={Styles.form}>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
             <div className={Styles.flex}>
               <div>
                 <input
                   type="text"
-                  name="firstName"
+                  name="Full_name"
                   placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={handleChange}
+                  required
                 />
-                {errors.firstName && <div className={Styles.error}>{errors.firstName}</div>}
               </div>
               <div>
                 <input
                   type="text"
                   name="lastName"
                   placeholder="Last Name"
-                  value={formData.lastName}
-                  onChange={handleChange}
+                  required
                 />
-                {errors.lastName && <div className={Styles.error}>{errors.lastName}</div>}
               </div>
             </div>
             <div>
@@ -79,34 +70,30 @@ const Contactme = ({ id }) => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
+                required
               />
-              {errors.email && <div className={Styles.error}>{errors.email}</div>}
             </div>
             <div className={Styles.message}>
               <textarea
                 name="message"
                 placeholder="Your Message..."
+                required
                 rows="4"
-                value={formData.message}
-                onChange={handleChange}
-                onKeyDown={handleKeyDown}
               ></textarea>
-              {errors.message && <div className={Styles.error}>{errors.message}</div>}
             </div>
             <button type="submit">Send</button>
+            <div className={Styles.row}>
+              {response && <Response message={responseMessage} />}
+            </div>
           </form>
         </div>
       </div>
-      <div className={Styles.scrollUp} onClick={() =>{
-        window.scrollTo({top:0, left:0, behavior:'smooth'});
+      <div className={Styles.scrollUp} onClick={() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       }}>
-        <BsFillArrowUpCircleFill className={Styles.iconscroll}/>
+        <BsFillArrowUpCircleFill className={Styles.iconscroll} />
       </div>
     </div>
-
-    
   );
 };
 
