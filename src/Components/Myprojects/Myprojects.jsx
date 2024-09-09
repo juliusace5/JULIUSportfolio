@@ -24,26 +24,34 @@ const Myprojects = ({ id }) => {
                   my coursework at NIIT, it showcases my ability to blend
                   aesthetic design with practical functionality. The page
                   features a sleek user interface, intuitive navigation, and
-                  compelling calls to action, all aimed at effectively engaging
-                  potential clients. Technologies used include HTML5, CSS3,
-                  JavaScript, and React.
+                  compelling calls to action.
                 </p>
-                <h5> <a href="https://figma-land-orcin.vercel.app/">VISIT</a> &#8594;</h5>
+                <h5>
+                  {" "}
+                  <a href="https://figma-land-orcin.vercel.app/">VISIT</a>{" "}
+                  &#8594;
+                </h5>
               </div>
             </div>
 
             <div className={Style.flex1image2}>
               <img src={image2} alt="" />
               <div className={Style.myText2}>
-                <h3>Mayframe Consultancy</h3>
+                <h3>Click2Work</h3>
                 <p>
-                  Mayframe has a dedicated consultancy services division that
-                  assists businesses in various domains. The consultancy
-                  services cover a wide range of areas, including strategic
-                  planning, operations management, financial analysis, marketing
-                  strategies, and more.
+                  A web application designed for the ITcore Talent Development
+                  Initiative, a non-profit focused on bridging Nigeria’s IT
+                  skill gap. The platform highlights the Click2Work program,
+                  which provides underserved youths access to quality IT
+                  education by removing financial barriers. Developed to support
+                  Nigeria’s developmental goals, the app serves as an
+                  information hub for ITcore's efforts to foster digital
+                  literacy and job creation.
                 </p>
-                <h5> <a href="https://figma-land-orcin.vercel.app/">VISIT</a> &#8594;</h5>
+                <h5>
+                  {" "}
+                  <a href="https://click2work.vercel.app/">VISIT</a> &#8594;
+                </h5>
               </div>
             </div>
           </div>
@@ -52,30 +60,35 @@ const Myprojects = ({ id }) => {
             <div className={Style.flex2image1}>
               <img src={image3} alt="" />
               <div className={Style.myText3}>
-                <h3>Mayframe Consultancy</h3>
+                <h3>Trafalgar</h3>
                 <p>
-                  Mayframe has a dedicated consultancy services division that
-                  assists businesses in various domains. The consultancy
-                  services cover a wide range of areas, including strategic
-                  planning, operations management, financial analysis, marketing
-                  strategies, and more.
+                  A mobile and online platform for Trafalgar, offering
+                  affordable, accessible healthcare solutions with a focus on
+                  quality and progressive care.
                 </p>
-                <h5> <a href="https://figma-land-orcin.vercel.app/">VISIT</a> &#8594;</h5>
+                <h5>
+                  {" "}
+                  <a href="https://trafalgar-eosin.vercel.app/">VISIT</a>{" "}
+                  &#8594;
+                </h5>
               </div>
             </div>
 
             <div className={Style.flex2image2}>
               <img src={image4} alt="" />
               <div className={Style.myText4}>
-                <h3>Mayframe Consultancy</h3>
+                <h3>D-express</h3>
                 <p>
-                  Mayframe has a dedicated consultancy services division that
-                  assists businesses in various domains. The consultancy
-                  services cover a wide range of areas, including strategic
-                  planning, operations management, financial analysis, marketing
-                  strategies, and more.
+                  A user-friendly online pharmacy platform for D-Express,
+                  featuring onsite delivery services. Designed to prioritize
+                  your health with convenient and reliable pharmaceutical
+                  solutions.
                 </p>
-                <h5> <a href="https://figma-land-orcin.vercel.app/">VISIT</a> &#8594;</h5>
+                <h5>
+                  {" "}
+                  <a href="https://d-expressph.vercel.app/">VISIT</a>{" "}
+                  &#8594;
+                </h5>
               </div>
             </div>
           </div>
