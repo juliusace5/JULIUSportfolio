@@ -2,6 +2,7 @@ import React from "react";
 import Style from "./Aboutme.module.css";
 import Heropic from "../../Assets/portpic2.png";
 import { FaWhatsappSquare, FaLinkedin, FaPhoneAlt } from "react-icons/fa"; // Corrected import
+import LazyLoad from 'react-lazyload';
 
 const PhoneNumber = "+2349035278177"; // Replace with your actual phone number
 
@@ -10,7 +11,9 @@ const Aboutme = ({ id }) => {
     <div id={id} className={Style.container}>
       <div className={Style.innercontainer}>
         <div className={Style.imageside}>
-          <img src={Heropic} alt="Portrait" />
+          <LazyLoad height={300} offset={100}>
+            <img src={Heropic} alt="Portrait" />
+          </LazyLoad>
         </div>
         <div className={Style.textside}>
           <h3>About Me</h3>
@@ -66,3 +69,4 @@ const Aboutme = ({ id }) => {
 };
 
 export default Aboutme;
+
